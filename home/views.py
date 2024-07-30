@@ -3,7 +3,9 @@ from django.http import HttpResponse
 
 
 def home(request):
-    return render(request, 'Home.html')
+    person = {'name' : 'meysam'}
+    return render(request, 'Home.html', context=person)
 
 def new_user(request):
-    return render(request, 'Newuser.html')
+    user = {'username':'root'}
+    return render(request, 'Newuser.html', context=user)

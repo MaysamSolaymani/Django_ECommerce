@@ -5,6 +5,10 @@
     <title>Home page</title>
 </head>
 <body>
-<h3>You are in home page ....</h3>
+    {#this is comment#}
+    {%if name == 'meysam'%}
+        <p>you logged in via admin privilage</p>
+    {%endif%}
+<h3>my name is {{ name|capfirst }}</h3>
 </body>
 </html>
